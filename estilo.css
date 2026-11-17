@@ -1,0 +1,20 @@
+:root{--tinta:#1b2733;--suave:#5d6b78;--linea:#dfe5ea;--fondo:#fbfcfd;--acento:#0b5cab}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.65}
+.ancho{max-width:700px;margin:0 auto;padding:0 20px}
+header.cabecera{border-bottom:1px solid var(--linea);padding:22px 0;font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+header.cabecera a{color:var(--tinta);text-decoration:none;font-weight:700;font-size:22px}
+header.cabecera p{margin:4px 0 0;color:var(--suave);font-size:15px}
+main{padding:36px 0 60px}
+h1{font-size:36px;line-height:1.2;margin:0 0 10px;text-wrap:balance}
+h2{font-size:25px;line-height:1.25;margin:0 0 6px}
+h2 a{color:var(--tinta);text-decoration:none}
+h2 a:hover,a{color:var(--acento)}
+.fecha{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:14px;color:var(--suave);margin:0 0 22px}
+.entradilla{font-size:22px;line-height:1.5;color:#33414e}
+.fuentes,.aviso{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:14px;color:var(--suave);border-top:1px solid var(--linea);padding-top:14px;margin-top:34px}
+.aviso{border:0;padding:0;margin-top:8px}
+.lista article{padding:26px 0;border-bottom:1px solid var(--linea)}
+.lista p{margin:0}
+footer{border-top:1px solid var(--linea);padding:20px 0 40px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:14px;color:var(--suave)}
+@media(max-width:520px){body{font-size:18px}h1{font-size:29px}}
