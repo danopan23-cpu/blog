@@ -10,6 +10,12 @@ a{color:inherit}
 .cabecera-fondo{background:var(--cab-fondo);color:var(--cab-tinta)}
 .cabecera{text-align:var(--cab-alinear);padding-top:24px}
 .cabecera .nombre{display:inline-block;font-family:var(--f-nombre);font-weight:var(--peso-nombre);font-size:clamp(40px,7.5vw,76px);line-height:1.02;letter-spacing:var(--esp-nombre);text-transform:var(--may-nombre);text-decoration:none;text-wrap:balance;color:var(--cab-tinta)}
+.logo-juego{display:inline-flex;align-items:center;gap:.14em;white-space:nowrap}
+.logo-juego .enmedio{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;font-size:max(.27em,11px);font-weight:400;font-style:italic;text-transform:none;letter-spacing:.04em;color:var(--acento-cab);line-height:1;padding:0 .12em;font-family:var(--f-texto)}
+.logo-juego .enmedio::before,.logo-juego .enmedio::after{content:"";display:block;width:1.9em;height:.1em;min-height:2px;background:currentColor;margin:.32em 0;border-radius:1px}
+.logo-juego .enmedio span{display:block;transform:translateY(-.04em)}
+.pie-logo{font-family:var(--f-nombre);font-weight:var(--peso-nombre);font-size:24px;letter-spacing:var(--esp-nombre);text-transform:var(--may-nombre);color:var(--tinta)}
+.pie-logo .enmedio{color:var(--acento)}
 .cabecera .lema{font-style:var(--estilo-lema);color:var(--cab-lema);margin:8px 0 16px;font-size:17px}
 .secciones{border-top:var(--regla-arriba);border-bottom:var(--regla-abajo);display:flex;justify-content:var(--cab-alinear);gap:28px;padding:8px 0;font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
 .secciones a{text-decoration:none;color:var(--cab-tinta)}
@@ -60,6 +66,22 @@ h2 a:hover,h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;te
 .fuentes{font-size:14px;color:var(--gris);border-top:2px solid var(--tinta);padding-top:12px;margin-top:30px}
 .aviso-ia{font-size:13px;color:var(--gris);font-style:italic;margin:8px 0 0}
 .hemeroteca h1{font-size:36px}
+.hem-intro{color:var(--gris);margin:0 0 8px}
+.meses{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin:18px 0 10px}
+.mes{border:1px solid var(--linea);padding:14px 14px 10px}
+.mes h3{font-family:var(--f-meta);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--tinta)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font-family:var(--f-meta);font-size:12px;text-align:center}
+.cal .dsem{color:var(--gris);font-weight:600;padding-bottom:4px}
+.cal span,.cal a{display:block;padding:6px 0;border-radius:3px}
+.cal .vacio{color:var(--linea)}
+.cal a{background:var(--acento);color:var(--papel);font-weight:700;text-decoration:none;position:relative}
+.cal a:hover{outline:2px solid var(--tinta)}
+.cal a small{display:block;font-size:9px;font-weight:600;opacity:.85;line-height:1}
+.hemeroteca h2.hem-mes{letter-spacing:-.005em;text-transform:none;font-family:var(--f-titular);font-weight:var(--peso-titular);font-size:28px;margin:40px 0 0;padding-bottom:8px;border-bottom:var(--regla-abajo)}
+.hem-dia{scroll-margin-top:16px}
+.hemeroteca .cuantas{font-weight:400;letter-spacing:0;text-transform:none;color:var(--gris)}
+.hemeroteca li{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:baseline}
+.hemeroteca li time{font-family:var(--f-meta);font-size:12px;font-weight:600;color:var(--acento)}
 .hemeroteca h2{font-family:var(--f-meta);font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid var(--tinta);padding-bottom:6px;margin:30px 0 4px}
 .hemeroteca ul{list-style:none;margin:0;padding:0}
 .hemeroteca li{padding:10px 0;border-bottom:1px solid var(--linea)}
@@ -75,4 +97,4 @@ a:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
 .rejilla{grid-template-columns:1fr}.rejilla article,.rejilla article:nth-child(3n+1),.rejilla article:nth-child(3n){padding:18px 0;border-left:0;border-top:1px solid var(--linea)}
 .rejilla article:first-child{border-top:0;padding-top:0}.mas{columns:1}}
 @media (max-width:520px){body{font-size:calc(var(--tam-texto) - 1px)}.secciones{gap:18px}}
-.barra{color:#e5e5e5;border-bottom:0}.cabecera{padding-top:18px}.cabecera .lema{font-family:var(--f-meta)}.secciones{border-bottom:0}footer{color:#d4d4d4;border-top:0}footer strong{color:#fff}.principal h2 a{background:linear-gradient(transparent 62%,#ffe066 62%);}.antetitulo{background:#c8102e;color:#fff;display:inline-block;padding:2px 7px;letter-spacing:.06em}
+.barra{color:#e5e5e5;border-bottom:0}.cabecera{padding-top:18px}.cabecera .lema{font-family:var(--f-meta)}.secciones{border-bottom:0}footer{color:#d4d4d4;border-top:0}footer strong,.pie-logo{color:#fff}.pie-logo .enmedio{color:#ffe066}.principal h2 a{background:linear-gradient(transparent 62%,#ffe066 62%);}.antetitulo{background:#c8102e;color:#fff;display:inline-block;padding:2px 7px;letter-spacing:.06em}
