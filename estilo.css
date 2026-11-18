@@ -1,4 +1,4 @@
-:root{--papel:#ffffff;--tinta:#111827;--gris:#4b5563;--linea:#e5e7eb;--acento:#0b57d0;--entradilla:#374151;--f-texto:Georgia,Cambria,"Times New Roman",serif;--f-titular:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--f-nombre:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--f-meta:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--peso-titular:800;--peso-nombre:800;--esp-titular:-.02em;--esp-nombre:-.035em;--may-nombre:none;--cab-fondo:transparent;--cab-tinta:#111827;--cab-lema:#4b5563;--acento-cab:#0b57d0;--cab-alinear:flex-start;--estilo-lema:normal;--regla-arriba:1px solid #e5e7eb;--regla-abajo:3px solid #111827;--regla-seccion:1px solid #e5e7eb;--barra-fondo:#f3f4f6;--pie-fondo:#f9fafb;--tam-texto:19px;--tam-principal:44px;--capital:1em;--justificar:left}
+:root{--papel:#fbf9f4;--tinta:#171717;--gris:#5c5a55;--linea:#d9d3c5;--acento:#8c1c13;--entradilla:#33312c;--f-texto:Georgia,Cambria,"Times New Roman",serif;--f-titular:Georgia,Cambria,"Times New Roman",serif;--f-nombre:Georgia,Cambria,"Times New Roman",serif;--f-meta:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--peso-titular:700;--peso-nombre:700;--esp-titular:-.005em;--esp-nombre:-.015em;--may-nombre:none;--cab-fondo:transparent;--cab-tinta:#171717;--cab-lema:#5c5a55;--acento-cab:#8c1c13;--cab-alinear:center;--estilo-lema:italic;--regla-arriba:1px solid #171717;--regla-abajo:4px double #171717;--regla-seccion:1px solid #171717;--barra-fondo:transparent;--pie-fondo:transparent;--tam-texto:19px;--tam-principal:46px;--capital:4.1em;--justificar:justify}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--f-texto);font-size:var(--tam-texto);line-height:1.62}
@@ -97,4 +97,4 @@ a:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
 .rejilla{grid-template-columns:1fr}.rejilla article,.rejilla article:nth-child(3n+1),.rejilla article:nth-child(3n){padding:18px 0;border-left:0;border-top:1px solid var(--linea)}
 .rejilla article:first-child{border-top:0;padding-top:0}.mas{columns:1}}
 @media (max-width:520px){body{font-size:calc(var(--tam-texto) - 1px)}.secciones{gap:18px}}
-.cabecera{text-align:left}.cabecera .lema{margin-top:4px;font-family:var(--f-meta)}
+
